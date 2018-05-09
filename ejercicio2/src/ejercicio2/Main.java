@@ -9,21 +9,20 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.Writer;
 
-/**
- *
- * @author Casa
- */
-public class Ejercicio2 {
+///**
+// *
+// * @author Casa
+// */
+public class Main {
 
-    /**
-     * @param args the command line arguments
-     */
+//    /**
+//     * @param args the command line arguments
+//     */
     public static void main(String[] args) {
-        // TODO code application logic here
-        operacion("texto.txt");
+        operacion("C:\\Users\\7mo tecnica\\Documents\\texto.txt");
         
-        File oldfile =new File("texto.txt"); //nombre archivo viejo
-        File newfile =new File("texto.txt.bkp"); //nombre archivo nuevo
+        File oldfile = new File("C:\\Users\\7mo tecnica\\Documents\\texto.txt"); //nombre archivo viejo
+        File newfile = new File("C:\\Users\\7mo tecnica\\Documents\\texto.txt.bkp"); //nombre archivo nuevo
 		
         if(oldfile.renameTo(newfile)){
             System.out.println("Archivo generado exitosamente!");
@@ -31,8 +30,8 @@ public class Ejercicio2 {
             System.out.println("Problema al generar archivo!");
         }
 
-        oldfile =new File("temp.txt"); //nombre archivo viejo
-        newfile =new File("texto.txt"); //nombre archivo nuevo
+        oldfile = new File("C:\\Users\\7mo tecnica\\Documents\\temp.txt"); //nombre archivo viejo
+        newfile = new File("C:\\Users\\7mo tecnica\\Documents\\texto.txt"); //nombre archivo nuevo
 		
         if(oldfile.renameTo(newfile)){
             System.out.println("Archivo generado exitosamente!");
@@ -65,7 +64,7 @@ public class Ejercicio2 {
        File archivo = null;
        FileReader fr = null;
        BufferedReader br = null;
-       String textoTemp = "temp.txt";
+       String textoTemp = "C:\\Users\\7mo tecnica\\Documents\\temp.txt";
        
        try {
           // Apertura del fichero y creacion de BufferedReader para poder
